@@ -1,0 +1,92 @@
+#chambres{
+    width: 100%;
+    padding: 2.5vh 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 2.5vh;
+}
+
+.chambre{
+    /* height: 40vh; */
+    border: 1px solid #bbb;
+    border-radius: 25px 0;
+    padding: 2.5vh 5%;
+    box-shadow: 5px 5px 5px 5px #ddd;
+}
+
+.chambre-type{
+    padding: 1vh 10%;
+    width: 60%;
+    background-color: #c03;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 15px 0 ;
+    margin: auto;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+
+.chambre-description{
+    width: 100%;
+    /* height: 25vh; */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap : 15px;
+}
+
+.chambre-text{
+    padding: 1.5vh 2.5%;
+    text-align: justify;
+}
+
+.chambre-img img{
+    border-radius: 15px 0;
+}
+
+.chambre-img{
+    height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    #chambres{
+        grid-template-columns: 1fr;
+    }
+
+    .chambre-img{
+        height: 25vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    #chambres{
+        grid-template-columns: 1fr;
+    }
+
+    .chambre-img{
+        height: 25vh;
+    }
+
+    .hide{
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    #chambres{
+        grid-template-columns: 1fr;
+    }
+
+    .chambre-description{
+        grid-template-columns: 1fr;
+    }
+
+    .chambre-img{
+        height: 25vh;
+    }
+
+    .hide{
+        display: none;
+    }
+}

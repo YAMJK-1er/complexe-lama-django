@@ -1,0 +1,138 @@
+#reservation, #reservation-salle
+{
+    width: 100%;
+    height: 0vh;
+    padding: 0vh 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    margin-top: 5vh;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#reservation-form{
+    background-color: #c03;
+    border-radius: 25px;
+    color: white;
+    width : 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#reservation-salle-form{
+    background-color: #c03;
+    border-radius: 25px;
+    color: white;
+    width : 30%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reservation-form-champ{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-form-champ input
+{
+    font-size: 1.25em;
+    border-radius: 10px;
+    padding: 7.5px 15px;
+    border: none;
+}
+
+.reservation-form-champ-date
+{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reservation-form-champ-date input{
+    background-color: #fff;
+}
+
+.reservation-form-champ-submit
+{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.reservation-form-champ-submit input
+{
+    font-size: 1.25em;
+    transition: ease-in all 0.5s;
+    background-color: #000;
+    color: #fff;
+    padding: 13px 0px;
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+.reservation-form-champ-type{
+    border: 1px solid black;
+}
+
+.reservation-form-champ-submit input:hover{
+    background-color: #f47c7c;
+    transition: ease-in all 0.5s;
+    color: #fff;
+    border-radius: 25px;
+}
+
+#reserv-btn, #reserv-salle-btn{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    #reservation-form, #reservation-salle-form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+    #reservation-form, #reservation-salle-form{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+    #reservation-form, #reservation-salle-form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    #reservation-form, #reservation-salle-form{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+    #reservation-form, #reservation-salle-form{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 900px) {
+    #reservation-form, #reservation-salle-form{
+        width: 30%;
+    }
+}
